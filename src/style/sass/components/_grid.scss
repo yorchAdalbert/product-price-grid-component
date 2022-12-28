@@ -1,0 +1,74 @@
+@use '../abstracts/' as *;
+
+.product-grid {
+    max-width: 40rem;
+    margin: 4em 2em;
+
+    border-radius: 0.5rem;
+    box-shadow: 0 0 1rem $medium-gray;
+
+    background-color: $white;
+
+    .cta,
+    .subscription,
+    .about-us {
+        padding: 2.5em;
+    }
+
+    .cta {
+        h2 {
+            color: $cyan;
+        }
+
+        h3 {
+            color: $bright-yellow;
+        }
+
+        p {
+            color: $medium-gray;
+        }
+    }
+
+    .subscription {
+        background-color: $cyan;
+        opacity: .95;
+        color: $white;
+
+        .price {
+            font-size: 1.8rem;
+            padding-right: 0.3em;
+        }
+
+        .month {
+            opacity: 0.5;
+            padding-bottom: 1em;
+        }
+
+        .btn {
+            width: 100%;
+            padding: 0.85em;
+            color: $white;
+            background-color: $bright-yellow;
+            border-radius: 0.4rem;
+            margin-top: 2em;
+
+            &:hover {
+                background-color: $white;
+                border: 2px solid $bright-yellow;
+                color: $bright-yellow;
+                box-shadow: inset 0 0 1rem $bright-yellow;
+            }
+        }
+    }
+
+    .about-us {
+        background-color: $cyan;
+        opacity: .75;
+        border-bottom-right-radius: 0.5rem;
+        color: $white;
+
+        p {
+            max-width: 21.83ch;
+        }
+    }
+}
