@@ -37,17 +37,28 @@ html {
   color-scheme: dark light;
 }
 
+span {
+  display: inline-block;
+}
+
 body {
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background-color: azure;
 }
 
+@media only screen and (max-width: 376px) {
+  .product-grid {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .product-grid {
   display: grid;
-  grid-template: repeat(2, auto)/repeat(2, 20rem);
+  max-width: 40rem;
+  grid-template: repeat(2, auto)/repeat(2, 1fr);
+  margin: 1em;
   border-radius: 0.75rem;
   box-shadow: 0 0 1rem #888;
   background-color: hsl(0deg, 0%, 100%);
@@ -76,11 +87,12 @@ body {
   color: hsl(0deg, 0%, 100%);
 }
 .product-grid .subscription .price {
-  margin-bottom: 1em;
-}
-.product-grid .subscription .price span {
   font-size: 1.8rem;
   padding-right: 0.3em;
+}
+.product-grid .subscription .month {
+  opacity: 0.5;
+  padding-bottom: 1em;
 }
 .product-grid .subscription .btn {
   width: 100%;
@@ -97,7 +109,7 @@ body {
   color: hsl(0deg, 0%, 100%);
 }
 .product-grid .about-us p {
-  padding-right: 2.5em;
+  max-width: 21.83ch;
 }
 
 /*# sourceMappingURL=main.css.map */
