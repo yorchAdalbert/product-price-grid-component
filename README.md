@@ -31,7 +31,7 @@ Users should be able to:
 ### Links 
 
 - Solution URL: [github - yorchAdalbert ](https://github.com/yorchAdalbert/ntf-component)
-- Live Site URL: [Single Price Grid Component ]()
+- Live Site URL: [Single Price Grid Component ](https://yorchadalbert.github.io/product-price-grid-component/src/)
 
 
 ### Built with
