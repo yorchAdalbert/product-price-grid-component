@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+h2,
+h3,
+p,
+a,
+span {
+  font-family: "Karla", sans-serif;
+}
+
+h2,
+h3 {
+  padding-bottom: 1em;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+}
+
+p {
+  line-height: 1.5;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  color-scheme: dark light;
+}
+
+span {
+  display: inline-block;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+@media (min-width: 650px) {
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .cta {
+    grid-column: 1/3;
+  }
+  .subscription {
+    border-bottom-left-radius: 0.5rem;
+  }
+}
+@media (max-width: 651px) {
+  .about-us {
+    border-bottom-left-radius: 0.5rem;
+  }
+}
+.product-grid {
+  max-width: 40rem;
+  margin: 4em 2em;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 1rem #888;
+  background-color: hsl(0deg, 0%, 100%);
+}
+.product-grid .cta,
+.product-grid .subscription,
+.product-grid .about-us {
+  padding: 2.5em;
+}
+.product-grid .cta h2 {
+  color: hsl(179deg, 58%, 49%);
+}
+.product-grid .cta h3 {
+  color: hsl(71deg, 73%, 54%);
+}
+.product-grid .cta p {
+  color: #888;
+}
+.product-grid .subscription {
+  background-color: hsl(179deg, 58%, 49%);
+  opacity: 0.95;
+  color: hsl(0deg, 0%, 100%);
+}
+.product-grid .subscription .price {
+  font-size: 1.8rem;
+  padding-right: 0.3em;
+}
+.product-grid .subscription .month {
+  opacity: 0.5;
+  padding-bottom: 1em;
+}
+.product-grid .subscription .btn {
+  width: 100%;
+  padding: 0.85em;
+  color: hsl(0deg, 0%, 100%);
+  background-color: hsl(71deg, 73%, 54%);
+  border-radius: 0.4rem;
+  margin-top: 2em;
+}
+.product-grid .subscription .btn:hover {
+  background-color: hsl(0deg, 0%, 100%);
+  border: 2px solid hsl(71deg, 73%, 54%);
+  color: hsl(71deg, 73%, 54%);
+  box-shadow: inset 0 0 1rem hsl(71deg, 73%, 54%);
+}
+.product-grid .about-us {
+  background-color: hsl(179deg, 58%, 49%);
+  opacity: 0.75;
+  border-bottom-right-radius: 0.5rem;
+  color: hsl(0deg, 0%, 100%);
+}
+.product-grid .about-us p {
+  max-width: 21.83ch;
+}
+
+/*# sourceMappingURL=main.css.map */
