@@ -1,6 +1,21 @@
-@media only screen and (max-width: 376px) {
+@media (min-width: 650px) {
     .product-grid {
-        display: flex;
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .cta {
+        grid-column: 1 / 3;
+    }
+
+    .subscription {
+        border-bottom-left-radius: 0.75rem;
+    }
+
+}
+
+@media (max-width: 651px) {
+    .about-us {
+        border-bottom-left-radius: 0.75rem;
     }
 }

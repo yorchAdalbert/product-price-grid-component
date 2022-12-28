@@ -1,9 +1,7 @@
 @use '../abstracts/' as *;
 
 .product-grid {
-    display: grid;
     max-width: 40rem;
-    grid-template: repeat(2, auto) / repeat(2, 1fr);
     margin: 1em;
 
     border-radius: 0.75rem;
@@ -18,8 +16,6 @@
     }
 
     .cta {
-        grid-column: 1 / 3;
-
         h2 {
             color: $cyan;
         }
@@ -36,7 +32,6 @@
     .subscription {
         background-color: $cyan;
         opacity: .95;
-        border-bottom-left-radius: 0.75rem;
         color: $white;
 
         .price {
