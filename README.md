@@ -23,10 +23,10 @@ Users should be able to:
 ### Screenshot
 
 #### Desktop Layout
-![](img/desktop-layout.png);
+![](./src/img/desktop-layout.png);
 
 #### Mobile Layout
-![](img/mobile-layot.png)
+![](./src/img/mobile-layot.png)
 
 ### Links 
 
